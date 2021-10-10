@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hoger Lager Uitbreiding</string>
+    <string name="guess_a_number">Guess a number</string>
+    <string name="play">Play</string>
+    <string name="input_out_of_bounds">Please input a number between 1 and 12!</string>
+    <string name="score">Score: %d</string>
+    <string name="lower">Lower</string>
+    <string name="correct">You guessed correctly!</string>
+    <string name="higher">Higher</string>
+    <string name="something_went_horribly_wrong">Something went horribly wrong!</string>
+</resources>
