@@ -51,14 +51,12 @@ class MainActivity : AppCompatActivity() {
             userGuess = edtNumberText.toInt()
         }
         if (userGuess < 1 || userGuess > 12) {
-            //Toast.makeText(this, R.string.input_out_of_bounds, Toast.LENGTH_LONG).show()
             binding.numberEditText.error = getString(R.string.input_out_of_bounds)
         } else {
             val toastMessage: String = when (game.play(userGuess)) {
                 LOWER -> getString(R.string.lower)
                 EQUAL -> getString(R.string.correct)
                 HIGHER -> getString(R.string.higher)
-                else -> getString(R.string.something_went_horribly_wrong)
             }
             // display the message to the user using a Toast
             Toast.makeText(this, toastMessage, Toast.LENGTH_SHORT).show()
